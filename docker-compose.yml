@@ -14,7 +14,7 @@ services:
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
     volumes:
-      - ./dbdata:/var/lib/mysql/:delegated
+      - ./mysql:/var/lib/mysql/:delegated
       - ./mysql/my.cnf:/etc/mysql/my.cnf:delegated
 #Volumes
 volumes:
